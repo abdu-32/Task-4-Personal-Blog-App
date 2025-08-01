@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Blog App Design System - Dark Theme with Professional Colors */
+
+@layer base {
+  :root {
+    --background: 220 13% 13%;
+    --foreground: 210 20% 98%;
+
+    --card: 220 13% 18%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 220 13% 18%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 220 13% 18%;
+    --primary-foreground: 210 20% 98%;
+
+    --secondary: 220 13% 25%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 220 13% 25%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 220 13% 25%;
+    --accent-foreground: 210 20% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 13% 25%;
+    --input: 220 13% 25%;
+    --ring: 220 13% 35%;
+
+    --radius: 0.75rem;
+    
+    /* Blog specific colors */
+    --blog-overlay: 0 0% 0% / 0.7;
+    --blog-card-bg: 0 0% 100%;
+    --blog-card-foreground: 220 13% 13%;
+    --blog-featured-overlay: 0 0% 0% / 0.4;
+    --blog-button-primary: 220 13% 18%;
+    --blog-button-danger: 0 84.2% 60.2%;
+    
+    /* Gradients */
+    --gradient-featured: linear-gradient(135deg, hsl(var(--blog-featured-overlay)), hsl(var(--blog-featured-overlay)));
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode inherits the same values since we're using dark theme by default */
+    --background: 220 13% 13%;
+    --foreground: 210 20% 98%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer components {
+  .blog-background {
+    @apply min-h-screen bg-background relative;
+    background-image: url('/src/assets/team-workspace.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .blog-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: hsl(var(--blog-overlay));
+    z-index: 0;
+  }
+  
+  .blog-content {
+    @apply relative z-10;
+  }
+  
+  .blog-card {
+    @apply bg-white text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+  
+  .blog-modal {
+    @apply bg-white text-gray-900 rounded-lg shadow-2xl max-w-md w-full mx-4;
+  }
+  
+  .blog-button-primary {
+    @apply bg-gray-900 text-white hover:bg-gray-800 transition-colors duration-200;
+  }
+  
+  .blog-button-danger {
+    @apply bg-red-600 text-white hover:bg-red-700 transition-colors duration-200;
+  }
+  
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
