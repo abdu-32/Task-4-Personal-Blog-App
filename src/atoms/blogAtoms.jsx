@@ -22,7 +22,7 @@ const sampleBlogs = [
     createdAt: "2024-01-12",
     editedAt: null,
     featured: false,
-    image: "./src/assets/images/9388"
+    image: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=400&h=250&fit=crop"
   },
   {
     id: "3",
