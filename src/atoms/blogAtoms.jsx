@@ -21,7 +21,8 @@ const sampleBlogs = [
     content: "Linear design principles form the backbone of modern user interface development. Understanding how to create flowing, intuitive layouts is essential for any designer looking to improve user engagement and satisfaction.\n\nThe concept of linear UI focuses on creating clear, logical progressions through interface elements. This approach helps users understand where they are in a process and what actions they need to take next. By implementing consistent visual hierarchies and clear navigation patterns, designers can significantly reduce cognitive load on users.\n\nKey principles include establishing clear visual flow, maintaining consistent spacing and alignment, and using typography and color strategically to guide attention. These elements work together to create interfaces that feel natural and effortless to navigate.",
     createdAt: "2024-01-12",
     editedAt: null,
-    featured: false
+    featured: false,
+    image: "./src/assets/images/9388"
   },
   {
     id: "3",
@@ -31,7 +32,8 @@ const sampleBlogs = [
     content: "Morning routines have become a cornerstone of personal productivity and mental well-being. Research consistently shows that how we start our day significantly impacts our energy levels, focus, and overall performance.\n\nSuccessful individuals across various fields often attribute their achievements to well-designed morning rituals. These routines typically include elements such as physical exercise, meditation or mindfulness practices, goal setting, and consuming nutritious food.\n\nThe key to an effective morning routine is consistency and personalization. What works for one person may not work for another, so it's important to experiment and find a combination of activities that energize and motivate you specifically.",
     createdAt: "2024-01-10",
     editedAt: null,
-    featured: false
+    featured: false,
+    image: "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?w=400&h=250&fit=crop"
   },
   {
     id: "4",
@@ -41,7 +43,8 @@ const sampleBlogs = [
     content: "In today's fast-paced world, finding the time to cook every meal from scratch can feel impossible. Whether you're a student juggling assignments, a parent managing multiple schedules, or simply someone who values convenience – meal prep is your secret weapon for maintaining a healthy diet without the daily stress.\n\nBut who said meal prep has to be time-consuming? With the right meal tricks, you can prep delicious, healthy meals in 30 minutes or less. The key is smart planning and more control over what goes into your body.\n\nWhy Quick Meal Prep Matters\n\nTime-Saving Tips for Effortless Meal Prep\n\n1. Plan Before You Chop\nDedicate 10 minutes on the week. Focus on overlapping ingredients to reduce waste and cooking time.\n\n2. Use Pre-Cut Ingredients\nDon't be afraid of pre-cut veggies or store-bought sauces – they're lifesavers when you're short on time.\n\n3. Batch Cook Smart Staples\nPrepare versatile items like grilled chicken, quinoa, or roasted veggies in bulk and mix and match throughout the week.\n\n4. Keep It Simple\nThink stir-fries, wraps, and bowls. They're fast, customizable, and endlessly satisfying.\n\n5. Invest in the Right Tools\nA good quality pan, sharp knife, and storage containers can cut your prep time in half.",
     createdAt: "2024-01-08",
     editedAt: null,
-    featured: false
+    featured: false,
+    image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=400&h=250&fit=crop"
   },
   {
     id: "5",
@@ -51,7 +54,8 @@ const sampleBlogs = [
     content: "Journaling has emerged as one of the most powerful tools for mental clarity and personal growth. In an age of constant digital distraction, the simple act of putting pen to paper can provide profound insights and emotional relief.\n\nThe practice of journaling helps organize thoughts, process emotions, and identify patterns in our behavior and thinking. Regular journaling can improve decision-making abilities, reduce stress, and increase self-awareness.\n\nDifferent journaling techniques serve different purposes. Stream-of-consciousness writing can help clear mental clutter, while structured prompts can guide deeper self-reflection. The key is finding an approach that resonates with your personality and lifestyle.",
     createdAt: "2024-01-05",
     editedAt: null,
-    featured: false
+    featured: false,
+    image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=400&h=250&fit=crop"
   }
 ];
 

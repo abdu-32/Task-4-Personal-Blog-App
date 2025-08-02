@@ -84,22 +84,7 @@
 
 @layer components {
   .blog-background {
-    @apply min-h-screen bg-background relative;
-    background-image: url('/src/assets/team-workspace.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .blog-background::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: hsl(var(--blog-overlay));
-    z-index: 0;
+    @apply min-h-screen bg-white relative;
   }
   
   .blog-content {

@@ -3,6 +3,8 @@ import { useAtomValue, useAtom } from 'jotai';
 import { blogsAtom, bookmarksAtom, toggleBookmarkAtom } from '../atoms/blogAtoms';
 import Navbar from '../components/Navbar';
 
+
+
 const BlogDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -121,7 +123,7 @@ const BlogDetails = () => {
               {/* Blog Image */}
               <div className="mb-8 rounded-lg overflow-hidden">
                 <img 
-                  src={blog.image || `https://images.unsplash.com/photo-${1500 + parseInt(blog.id)}?w=800&h=400&fit=crop&q=80`}
+                  src={blog.image || `https://images.unsplash.com/home.png-${1500 + parseInt(blog.id)}?w=800&h=400&fit=crop&q=80`}
                   alt={blog.title}
                   className="w-full h-64 object-cover"
                 />
@@ -142,5 +144,6 @@ const BlogDetails = () => {
     </div>
   );
 };
+
 
 export default BlogDetails;

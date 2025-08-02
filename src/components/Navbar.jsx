@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-bold text-white">
+          <Link to="/" className="text-2xl font-bold text-gray-900">
             Blog
           </Link>
 
@@ -32,8 +32,8 @@ const Navbar = () => {
                 to={item.path}
                 className={`px-4 py-2 rounded-full transition-all duration-200 ${
                   isActive(item.path)
-                    ? 'bg-white text-gray-900 font-medium'
-                    : 'text-white hover:bg-white/10'
+                    ? 'bg-gray-900 text-white font-medium'
+                    : 'text-gray-900 hover:bg-gray-100'
                 }`}
               >
                 {item.name}
